@@ -3,9 +3,9 @@
 ### Refer to the image below:
 
 <br>
-<div style="text-align: center;">
-  
-</div>
+
+  ![App Flow](app-flow.gif)
+
 <br/>
 
 
