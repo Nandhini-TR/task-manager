@@ -1,0 +1,193 @@
+.task-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ellipsis-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.task-title {
+  font-family: 'Roboto';
+  font-size: 28px;
+  color: darkblue;
+}
+
+.ellipsis-button {
+  border: 0px none;
+  background: transparent;
+  font-size: 20px;
+}
+
+.edit-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 440px;
+  margin-top: -35px;
+}
+
+.edit-button {
+  font-family: 'Roboto';
+  font-size: 14px;
+  align-items: center;
+  border: 0px none;
+  background: transparent;
+  margin: 5px;
+}
+
+.task-description {
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  color: #666;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority-container {
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Roboto';
+  height: 20px;
+  width: 100px;
+}
+
+.priority-tag-high {
+  background-color: rgb(245, 149, 149);
+  color: red;
+}
+
+.priority-tag-medium {
+  background-color: rgb(241 218 176);
+
+  color: orange;
+}
+
+.priority-tag-low {
+  background-color: rgb(194, 247, 194);
+  color: green;
+}
+
+.flag-icon {
+  font-size: 20px;
+  margin: 5px;
+}
+
+.due-date {
+  color: #666;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.timer-container {
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  height: 20px;
+  width: 130px;
+}
+
+.clock-icon {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #666;
+}
+
+@media screen and (max-width: 576px) {
+  .task-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .task-title {
+    font-size: 20px;
+  }
+
+  .task-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .task-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .priority-container {
+    width: 80px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .timer-container {
+    width: 100px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .clock-icon {
+    font-size: 16px;
+  }
+
+  .ellipsis-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-container {
+    position: static;
+    margin-left: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .task-title {
+    font-size: 24px;
+  }
+
+  .task-description {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .priority-container,
+  .timer-container {
+    width: 90px;
+    padding: 9px;
+    font-size: 13px;
+  }
+
+  .clock-icon {
+    font-size: 18px;
+  }
+
+  .edit-container {
+    position: static;
+    margin-left: 0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,75 @@
+.task-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  border-radius: 7px;
+  width: 700px;
+}
+
+.upcoming-card {
+  background-color: rgb(229, 185, 238);
+}
+
+.overdue-card {
+  background-color: rgb(178, 243, 221);
+}
+
+.completed-card {
+  background-color: rgb(134, 243, 243);
+}
+
+.add-logo-button {
+  background: transparent;
+  border: 0px none;
+}
+
+.add-logo {
+  font-size: 30px;
+  color: #0404f0f3;
+}
+
+.task-name {
+  font-family: 'Roboto';
+  font-size: 35px;
+}
+
+.add-form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+  .task-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .task-name {
+    font-size: 24px;
+  }
+
+  .add-logo {
+    font-size: 25px;
+  }
+
+  .add-form-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .task-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .task-name {
+    font-size: 28px;
+  }
+
+  .add-logo {
+    font-size: 28px;
+  }
+}
